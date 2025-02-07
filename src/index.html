@@ -18,7 +18,19 @@
           </a>
         </nav>
       </div>
+      <div class="container">
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="Search images..." />
+          <button type="submit">Search</button>
+        </form>
+        <p id="loading-text" class="hidden">Loading images, please wait...</p>
+      </div>
     </header>
+
+    <main>
+      <div id="loader" class="hidden"></div>
+      <div id="gallery" class="gallery"></div>
+    </main>
 
     <script type="module" src="./main.js"></script>
   </body>
