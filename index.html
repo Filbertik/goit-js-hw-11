@@ -8,7 +8,7 @@
     <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-DEenWwFD.js">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-DumFYO8Z.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-ClHJFzDt.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-CTXIO-ee.css">
   </head>
   <body>
     <header class="header">
@@ -26,7 +26,15 @@
           <input type="text" id="search-input" placeholder="Search images..." />
           <button type="submit">Search</button>
         </form>
-        <p id="loading-text" class="hidden">Loading images, please wait...</p>
+
+        <!-- // edits 1  Loader -->
+        <div class="loader-container" id="loader">
+          <div class="loader"></div>
+          <p>Loading images, please wait...</p>
+        </div>
+        <!-- // edits 1 -->
+
+        <!-- <p id="loading-text" class="hidden">Loading images, please wait...</p> -->
       </div>
     </header>
 
