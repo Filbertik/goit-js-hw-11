@@ -63,3 +63,41 @@ button {
 .hidden {
   display: none;
 }
+
+/* стилі для лоадера */
+.loader-container {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loader {
+  /* не відомо  чи треба  кружечок - поки приховав */
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+.loader-container p {
+  margin-top: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -35,7 +35,7 @@ form.addEventListener('submit', async event => {
   }
 
   arts.innerHTML = '';
-  loader.classList.remove('hidden');
+  loader.style.display = 'block'; // edits 1  Show loader
 
   try {
     const images = await fetchImages(query);
@@ -59,6 +59,6 @@ form.addEventListener('submit', async event => {
       position: 'topRight',
     });
   } finally {
-    loader.classList.add('hidden');
+    loader.style.display = 'none'; // edits 1  Hide loader
   }
 });

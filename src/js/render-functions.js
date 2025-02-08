@@ -28,4 +28,7 @@ export function renderGallery(images) {
     .join('');
 
   arts.innerHTML = markup;
+
+  // lightbox.refresh();
+  // edits 1
 }
